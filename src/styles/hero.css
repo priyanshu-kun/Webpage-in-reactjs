@@ -1,0 +1,231 @@
+.hero-section {
+    width: 100vw;
+    max-width: 1700px;
+    height: 100vh;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    align-items: center;
+
+    /* background: red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: -1; */
+
+}
+
+.hero-subSection {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-section .hero-subSection p:first-child {
+    font-family: "Kamerik105-Bold";
+    font-size: 1rem;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero-section .hero-subSection h1 {
+    font-family: "Kamerik105-Heavy.ttf";
+    font-size: 4rem;
+    color: rgb(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 4.2rem !important;
+    /* word-break: break-all; */
+}
+
+.hero-section .hero-subSection h1 span {
+    color: var(--accent);
+}
+
+.description {
+    font-family: "Kamerik105-Bold";
+    width: 60%;
+    color: rgb(255, 255, 255, 0.6);
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.call-to-action {
+    width: 30%;
+    height: 3rem;
+    background: #ffffff;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+    text-decoration: none;
+    font-family: "Kamerik105-Bold";
+    font-size: 1rem;
+    color: #000000;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+    outline: none;
+    overflow: hidden;
+}
+
+/* .call-to-action span {
+    position: absolute;
+    background: var(--accent);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+*/
+
+.call-to-action:hover {
+    background-color: var(--accent);
+    color: #ffffff;
+
+}
+
+.call-to-action:hover>.fa-arrow-right {
+    color: #ffffff;
+}
+
+.fa-arrow-right {
+    position: relative;
+    left: 10px;
+    font-size: 1.2rem;
+    color: var(--accent);
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 10rem;
+    z-index: -1;
+    line-height: 10rem;
+    text-transform: uppercase;
+    font-family: "Kamerik105-Heavy.ttf";
+    opacity: 0.08;
+
+}
+
+.scroll-snippet {
+    position: absolute;
+    left: -2rem;
+    bottom: 20%;
+    font-family: "Kamerik105-Bold";
+    font-size: 0.6rem;
+    color: rgb(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    /* position: relative; */
+}
+
+.fa-arrow-snippit {
+    position: absolute;
+    transform: rotate(180deg);
+    left: -20px;
+    font-size: 0.8rem;
+    bottom: 1px;
+    color: var(--accent);
+
+}
+
+.social-icons {
+    position: absolute;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    right: 3%;
+
+}
+
+.social-icons a {
+    margin: 5px 0;
+}
+
+.icons {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.3);
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.icons:hover {
+    opacity: 0.6;
+}
+
+.envelop {
+    font-size: 1.2rem;
+}
